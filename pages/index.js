@@ -1,12 +1,14 @@
 import React from 'react'
 import Link from 'next/link'
 import Head from '../components/head'
-import Nav from '../components/nav'
+
+import NavMenu from '../components/nav-menu'
 
 const Home = () => (
   <div>
     <Head title="Home" />
-    <Nav />
+
+    <NavMenu />
 
     <div className="hero">
       <h1 className="title">Welcome to Next!</h1>
