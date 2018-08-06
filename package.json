@@ -11,6 +11,11 @@
     "react": "^16.4.2",
     "react-burger-menu": "^2.5.2",
     "react-dom": "^16.4.2",
-    "react-media": "^1.8.0"
+    "react-media": "^1.8.0",
+    "react-progressive-bg-image": "^3.0.0",
+    "styled-components": "^3.4.1"
+  },
+  "devDependencies": {
+    "next-images": "^0.10.6"
   }
 }

@@ -2,7 +2,8 @@ import Menus from 'react-burger-menu'
 import merge from 'lodash/merge'
 import Media from 'react-media'
 
-import Links from '../components/links'
+import NavImage from './nav-image'
+import Links from './links'
 
 const NAV_LINKS = [{
   href: '/',
@@ -24,7 +25,8 @@ const NAV_LINKS = [{
 const NavLinks = props => <Links links={NAV_LINKS} {...props} />
 
 const DesktopMenu = () => ( 
-  <div className="menu">
+  <div>
+    <NavImage />
     <NavLinks inline />
     <style jsx>{`
       .menu {
