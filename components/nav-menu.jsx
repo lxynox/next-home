@@ -22,21 +22,37 @@ const NAV_LINKS = [{
   label: 'Blog' 
 }]
 
-const NavLinks = props => <Links links={NAV_LINKS} {...props} />
+const NavLinks = ({inline, ...rest}) => 
+  <ul className='nav-menu'>
+    <Links links={NAV_LINKS} {...rest} />
 
-const DesktopMenu = () => ( 
-  <div>
-    <NavImage />
-    <NavLinks inline />
     <style jsx>{`
-      .menu {
+      ul {
+        padding: 12px 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        flex-direction: ${inline? 'row': 'column'};
+        justify-content: space-around;
+        align-items: center;
+
         background: mintcream;
         position: sticky;
-        padding: 10px 0;
         top: 0;
       }
     `}</style>
-  </div>
+  </ul>
+
+NavLinks.defaultProps = {
+  inline: false
+}
+
+
+const DesktopMenu = () => ( 
+  <>
+    <NavImage />
+    <NavLinks inline />
+  </>
 )
 
 const MobileMenu = ({type, right, children, ...rest}) => {
