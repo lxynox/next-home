@@ -1,5 +1,5 @@
-import base16Ocean from './base-16-ocean'
-import paperColor from './paper-color'
+import base16Ocean from './presets/base-16-ocean'
+import paperColor from './presets/paper-color'
 
 const themePresets = {
   base16Ocean,
