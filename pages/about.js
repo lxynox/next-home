@@ -1,7 +1,8 @@
-import ThemeProvider, {Colors} from '../components/themes'
+import ThemeProvider, {Colors, ThemeToggler} from '../components/themes'
 
 const About = () => 
   <ThemeProvider>
+    <ThemeToggler/>
     <div>
       <Colors>
       {({blue}) =>

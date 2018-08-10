@@ -10,8 +10,8 @@ class Theme extends React.Component {
   state = {themes: defaultThemes, isReversed: false}
   toggleTheme = () => {
     const nextIsReversed = !this.state.isReversed
-    if (nextIsReversed) document.body.classList.add('.reversed')
-    else document.body.classList.remove('.reversed')
+    if (nextIsReversed) document.body.classList.add('reversed')
+    else document.body.classList.remove('reversed')
     this.setState({isReversed: nextIsReversed})
   }
   get themes() {
@@ -21,7 +21,7 @@ class Theme extends React.Component {
     return <ThemeContext.Provider value={this.themes}>
       {this.props.children}
       <style jsx global>{`
-        .reverse { color: ${defaultThemes.white}; backgroundColor: ${hemes.black} }
+        .reversed { color: ${defaultThemes.default.white}; background-color: ${defaultThemes.default.black}; }
       `}</style>
     </ThemeContext.Provider>
   }
@@ -48,6 +48,6 @@ Colors.defaultProps = {
 export const ThemeToggler = () =>
   <ThemeContext.Consumer>
   {({toggleTheme, themes}) =>
-    <Toggle onChange={toggleTheme} />
+    <button onClick={toggleTheme}>Toggle Theme</button>
   }
   </ThemeContext.Consumer>

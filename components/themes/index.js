@@ -1,4 +1,5 @@
 export {
   default as default,
-  Colors
+  Colors,
+  ThemeToggler
 } from './theme'
