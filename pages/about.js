@@ -1,4 +1,5 @@
 import ThemeProvider, {Colors, ThemeSelect} from '../components/themes'
+import Terminal from '../components/terminal'
 
 const About = () => 
   <ThemeProvider>
@@ -8,10 +9,11 @@ const About = () =>
         <span style={{color: blue}}>Some blue texts</span>
       }
       </Colors>
-      <ThemeSelect />
+      <ThemeSelect/>
     </>
     <hr/>
     About
+    <Terminal/>
   </ThemeProvider>
 
 export default About

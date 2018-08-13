@@ -1,5 +1,4 @@
 import {func} from 'prop-types'
-import Toggle from 'react-toggle'
 import DEFAULT_THEME from './presets/native'
 import ThemeContext from './context'
 import createThemes from './createThemes'
