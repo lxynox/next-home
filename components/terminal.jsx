@@ -1,6 +1,13 @@
 import Terminal from 'react-bash';
 
+const helpCmds = ['whoami', 'ls', <a target='_blank' href='https://www.google.com'>Visit Google</a>]
+
 const extensions = {
+  help: {
+    exec(state, command) {
+      return {history: helpCmds.map(value => ({value}))}
+    }
+  },
   sudo: {
     exec: ({ structure, history, cwd  }) => {
       return { structure, cwd,
