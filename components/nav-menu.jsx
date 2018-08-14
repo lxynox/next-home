@@ -2,6 +2,7 @@ import Menus from 'react-burger-menu'
 import merge from 'lodash/merge'
 import Media from 'react-media'
 
+import Responsive from './responsive/responsive.jsx'
 import NavImage from './nav-image'
 import Links from './links'
 
@@ -120,15 +121,15 @@ MobileMenu.defaultProps = {
   type: 'pushRotate'
 }
 
-const BREAKPOINT_MOBILE = 767
-
-const BREAKPOINT_DESKTOP = 1024
-
 const NavMenu = () => (
-  <>
-    <Media query={{maxWidth: BREAKPOINT_MOBILE}} render={() => <MobileMenu right />} />
-    <Media query={{minWidth: BREAKPOINT_MOBILE+1}} render={() => <DesktopMenu />} />
-  </>
+  <Responsive>
+    <Responsive.Mobile>
+      <MobileMenu right/>
+    </Responsive.Mobile>
+    <Responsive.Desktop>
+      <DesktopMenu/>
+    </Responsive.Desktop>
+  </Responsive>
 ) 
 
 export default NavMenu
