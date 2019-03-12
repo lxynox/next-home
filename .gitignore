@@ -7,6 +7,7 @@
 /coverage
 
 # production
+/out
 /build
 /dist
 /.next
@@ -14,6 +15,7 @@
 # misc
 .DS_Store
 .env
+.netlify
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
