@@ -9,6 +9,7 @@
   "dependencies": {
     "lodash": "^4.17.10",
     "next": "^6.1.1",
+    "next-images": "^0.10.6",
     "react": "^16.4.2",
     "react-bash": "lxynox/react-bash#master",
     "react-burger-menu": "^2.5.2",
@@ -18,6 +19,30 @@
     "styled-components": "^3.4.1"
   },
   "devDependencies": {
-    "next-images": "^0.10.6"
+    "husky": "^1.3.1",
+    "lint-staged": "^8.1.5",
+    "prettier": "1.16.4"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": false,
+    "singleQuote": true,
+    "printWidth": 80,
+    "javascriptEnable": [
+      "javascript",
+      "javascriptreact"
+    ]
   }
 }
