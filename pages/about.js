@@ -1,6 +1,10 @@
-import ThemeProvider, {Colors, ThemeSelect} from '../components/themes'
 import Terminal from '../components/terminal'
+import Layout from '../layouts'
 
-const About = () => <Terminal/>
+const About = () => (
+  <Layout>
+    <Terminal />
+  </Layout>
+)
 
 export default About
