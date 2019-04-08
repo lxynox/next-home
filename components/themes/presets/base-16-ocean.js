@@ -17,5 +17,5 @@ export default {
   lightBlue: '#8497bd',
   lightMagenta: '#b48ead',
   lightCyan: '#96b5b4',
-  lightWhite: '#eff1f5'
+  lightWhite: '#eff1f5',
 }

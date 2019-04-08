@@ -1,5 +1,1 @@
-export {
-  default as default,
-  Colors,
-  ThemeSelect
-} from './theme'
+export { default, Colors, ThemeSelect } from './theme'

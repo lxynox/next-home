@@ -1,5 +1,5 @@
-const backgroundColor = '#EEEEEE';
-const foregroundColor = '#444444';
+const backgroundColor = '#EEEEEE'
+const foregroundColor = '#444444'
 
 export default {
   black: foregroundColor,
@@ -19,5 +19,4 @@ export default {
   lightCyan: '#2DCED0',
   lightWhite: foregroundColor,
   lightGray: 'rgba(0, 0, 0, 0.075)',
-};
-
+}

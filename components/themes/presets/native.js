@@ -14,5 +14,5 @@ export default {
   lightBlue: '#0000FF',
   lightMagenta: '#E500E5',
   lightCyan: '#00E5E5',
-  lightWhite: '#E5E5E5'
+  lightWhite: '#E5E5E5',
 }

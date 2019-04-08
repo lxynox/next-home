@@ -1,2 +1,3 @@
-import {createNamedContext} from '../../utils'
+import { createNamedContext } from '../../utils'
+
 export default createNamedContext('Theme')

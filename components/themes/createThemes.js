@@ -8,5 +8,5 @@ const themePresets = {
 
 export default (theme, name = 'default') => ({
   [name]: theme,
-  ...themePresets
+  ...themePresets,
 })
